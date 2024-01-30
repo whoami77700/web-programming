@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basic Animation</title>
+    <style>
+        #layer1 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        #layer2 {
+            position: absolute;
+            top: 50px;
+            left: 150px;
+        }
+
+        #layer3 {
+            position: absolute;
+            top: 50px;
+            left: 250px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function moveImage(layer) {
+            var topValue = window.prompt("Enter Top Value");
+            var leftValue = window.prompt("Enter Left Value");
+            
+            document.getElementById(layer).style.top = topValue + 'px';
+            document.getElementById(layer).style.left = leftValue + 'px';
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="layer1"><img src="Koala.jpg" onclick="moveImage('layer1')" alt="My Image"/></div>
+    <div id="layer2"><img src="Koala.jpg" onclick="moveImage('layer2')" alt="My Image"/></div>
+    <div id="layer3"><img src="Koala.jpg" onclick="moveImage('layer3')" alt="My Image"/></div>
+
+</body>
+
+</html>

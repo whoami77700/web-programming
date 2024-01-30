@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Display Date, Day & Year</title>
+
+<script type="text/javascript">
+
+// Array of days
+var days = ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth", "Ninth", "Tenth", "Eleventh", "Twelfth", "Thirteenth", "Fourteenth", "Fifteenth", "Sixteenth", "Seventeenth", "Eighteenth", "Nineteenth", "Twentieth", "Twenty-First", "Twenty-Second", "Twenty-Third", "Twenty-Fourth", "Twenty-Fifth", "Twenty-Sixth", "Twenty-Seventh", "Twenty-Eighth", "Twenty-Ninth", "Thirtieth", "Thirty-First"];
+
+// Array of months
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+// Getting the current date
+var dateObj = new Date();
+
+var day = days[dateObj.getDate() - 1]; // Adjusted to start from index 0
+var month = months[dateObj.getMonth()];
+var year = dateObj.getFullYear();
+
+// Displaying the date in words
+alert("Today's date is: " + day + " " + month + " " + year);
+
+</script>
+
+</head>
+
+<body>
+
+<!-- The body content -->
+
+</body>
+
+</html>
